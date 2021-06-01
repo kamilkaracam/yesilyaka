@@ -1,15 +1,15 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 //import npm packages
-import {Swiper,SwiperSlide} from "swiper/react";
-import SwiperCore,{Pagination, Autoplay} from "swiper/core";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Autoplay } from "swiper/core";
 import AOS from 'aos';
 
 //import component in project
 import SwiperCard from "./SwiperCard";
 
 //import data
-import {newsSwiper} from "../../../helper/IndexData";
+import { newsSwiper } from "../../../helper/IndexData";
 
 //import style
 import './newsswiper.scss';
@@ -18,12 +18,12 @@ SwiperCore.use([Pagination, Autoplay]);
 
 const NewsSwiper = () => {
 
-    useEffect(()=>{
+    useEffect(() => {
 
         AOS.init()
         AOS.refresh()
 
-    },[])
+    }, [])
 
     return (
         <>
@@ -52,22 +52,13 @@ const NewsSwiper = () => {
                     className="newsSlide"
                 >
                     <SwiperCard
-                      img={newsSwiper[1].img}
-                      alt={newsSwiper[1].alt}
-                      title={newsSwiper[1].title}
-                      text={newsSwiper[1].text}
+                        img={newsSwiper[1].img}
+                        alt={newsSwiper[1].alt}
+                        title={newsSwiper[1].title}
+                        text={newsSwiper[1].text}
                     />
                 </SwiperSlide>
-                <SwiperSlide
-                  className="newsSlide"
-                >
-                    <SwiperCard
-                      img={newsSwiper[2].img}
-                      alt={newsSwiper[2].alt}
-                      title={newsSwiper[2].title}
-                      text={newsSwiper[2].text}
-                    />
-                </SwiperSlide>
+
             </Swiper>
         </>
     )

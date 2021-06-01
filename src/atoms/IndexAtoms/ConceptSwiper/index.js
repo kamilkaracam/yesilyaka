@@ -1,15 +1,15 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 //import npm packages
-import {Swiper,SwiperSlide} from "swiper/react";
-import SwiperCore,{Navigation} from "swiper/core";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper/core";
 import AOS from 'aos';
 
 //import component in project
 import SwiperCard from "./SwiperCard";
 
 //import data
-import {conceptSwiper} from "../../../helper/IndexData";
+import { conceptSwiper } from "../../../helper/IndexData";
 
 //import style
 import './conceptswiper.scss';
@@ -18,12 +18,12 @@ SwiperCore.use([Navigation]);
 
 const ConceptSwiper = () => {
 
-    useEffect(()=>{
+    useEffect(() => {
 
         AOS.init()
         AOS.refresh()
 
-    },[])
+    }, [])
 
     return (
         <>
@@ -31,6 +31,7 @@ const ConceptSwiper = () => {
                 spaceBetween={18}
                 centeredSlides={true}
                 slidesPerView={2}
+                navigation={true}
                 className="conceptSwiper"
                 grabCursor={true}
             >
