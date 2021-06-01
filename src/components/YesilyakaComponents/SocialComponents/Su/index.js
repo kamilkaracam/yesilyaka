@@ -4,19 +4,19 @@ import React from 'react';
 import SocialBoxSu from "../../../../atoms/YesilyakaAtoms/SocialBoxSu";
 
 //import images
-import socialhero from '../../../../assets/images/Su/sosyal/sosyalherosu.png';
-import {SocialIconSets} from "../../../../helper/Sets/IconSets";
+import socialhero from '../../../../assets/images/Su/sosyal/su-social.jpg';
+import { SocialIconSets } from "../../../../helper/Sets/IconSets";
 
 // import style
 import * as classes from './socialsu.module.scss';
 import SmallTitle from "../../../../atoms/SmallTitle";
 
 const SocialSuFlow = () => {
-    return(
+    return (
         <>
             <div className={classes.hero}>
                 <div className={classes.socialHero}>
-                    <img src={socialhero} alt="social hero"/>
+                    <img src={socialhero} alt="social hero" />
                 </div>
                 <div className={classes.socialFlow}>
                     <SmallTitle title="SOSYAL ALANLAR"></SmallTitle>
