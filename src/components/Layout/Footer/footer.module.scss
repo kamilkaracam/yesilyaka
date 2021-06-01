@@ -1,0 +1,83 @@
+@import "../../../assets/styles/breakpoints";
+@import "../../../assets/styles/main";
+
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $footer;
+  padding: 2rem;
+  position: relative;
+
+  .info {
+    width: 160px;
+    height: 20px;
+    background-color: #b5b5b5;
+    position: absolute;
+    top: 0;
+    border-end-start-radius: 12px;
+    border-end-end-radius: 12px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 12px;
+    line-height: 1.5rem;
+    color: #FFF9CC;
+    letter-spacing: 1px;
+    font-weight: 300;
+
+    &:last-child {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.altbar {
+  background-color: #F7F7F7;
+  width: 100%;
+  font-size: 8px;
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @include media('>phone') {
+    font-size: 12px;
+  }
+
+  span {
+    padding: 0.5rem;
+    width: 75%;
+    margin: 0 auto;
+
+    a {
+      margin-right: 0.5rem;
+    }
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0;
+    li {
+      img {
+        width: 20px;
+        margin: 0.3rem;
+      }
+    }
+  }
+
+}
+

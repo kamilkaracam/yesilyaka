@@ -1,0 +1,71 @@
+@import "../../assets/styles/breakpoints";
+@import "../../assets/styles/main";
+
+*{
+  text-decoration: none;
+
+  &:visited,&:focus, &:hover, &:active {
+    text-decoration: none;
+  }
+}
+
+
+.modal-backdrop {
+  background-image: url("../../assets/images/index/indexhero.png");
+  /* Add the blur effect */
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+ z-index: 999;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 1rem 1rem 0;
+}
+
+.modal-content {
+  background-color: $beige;
+  width: 85%;
+  margin: 0 auto;
+
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+.navbar-nav a {
+
+  &:active,&:focus,&:visited,&:hover {
+    color:$text;
+  }
+}
+
+.dropdown-item {
+  text-decoration: none;
+  &:focus, &:hover, &:active, &:visited {
+    color: $secondwhite !important;
+    background-color: $green !important;
+  }
+}
+
+.nav-item {
+  .dropdown-menu {
+    background-color: $beige;
+  }
+}
+
+
+

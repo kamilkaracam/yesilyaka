@@ -1,0 +1,22 @@
+@import "../../../assets/styles/breakpoints";
+@import "../../../assets/styles/main";
+
+.newsSwiper {
+
+  .swiper-pagination {
+    padding: 1rem 0;
+  }
+
+  .swiper-pagination-bullet{
+    width: 80px;
+    border-radius: 5px;
+    height: 5px;
+    background: linear-gradient(to left, #808080 50%, #000000 50%) right;
+    background-size: 200%;
+  }
+  .swiper-pagination-bullet-active{
+    background-position: left;
+    transition: 12s;
+  }
+}
+

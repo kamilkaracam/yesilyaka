@@ -1,0 +1,2 @@
+(self.webpackChunkyesilyaka=self.webpackChunkyesilyaka||[]).push([[187],{1475:function(e,a,n){"use strict";n.r(a);var t=n(7294);a.default=function(){return t.createElement(t.Fragment,null,"Katalog")}}}]);
+//# sourceMappingURL=component---src-pages-e-katalog-js-4ab8a24db9d1d2dc2204.js.map

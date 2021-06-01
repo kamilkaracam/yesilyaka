@@ -1,0 +1,42 @@
+@import '../../../../assets/styles/breakpoints';
+@import '../../../../assets/styles/main';
+
+.hero {
+  max-width:1500px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  .socialHero {
+   
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .socialFlow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    @include media('>bigtablet') {
+      padding-top: 3rem;
+    }
+
+    h6 {
+      margin: 2rem 0 0 !important;
+    }
+
+    .boxWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+  }
+}

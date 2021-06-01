@@ -1,0 +1,123 @@
+@import '../../../assets/styles/breakpoints';
+@import '../../../assets/styles/main';
+
+.heroImage {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+  @include media('>tablet') {
+    width: 95%;
+    margin: 0 auto;
+    height: 480px;
+    overflow: hidden;
+  }
+
+  img {
+
+    width: 100%;
+
+    @include media('>tablet'){
+      object-fit: none;
+      object-position: 0px -235px;
+      zoom: 60%;
+
+      @include media ('>=minidesktop') {
+        object-position: 0px -260px;
+        zoom: 75%;
+      }
+
+    }
+  }
+}
+
+.sogutText {
+
+  padding: 2rem;
+
+  @include media('>tablet') {
+    padding: 4rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    font-family: $primary;
+
+    @include media('>tablet'){
+      font-size: 3rem;
+    }
+  }
+  p {
+    font-size: 10px;
+
+    @include media('>tablet') {
+      font-size: 14px;
+    }
+  }
+
+  .hr {
+    width: 80%;
+
+    @include media('>tablet') {
+      width: 45%;
+    }
+  }
+
+}
+
+.sogutImage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+
+  @include media('>tablet'){
+
+    width: 95%;
+    margin: 0 auto;
+
+  }
+
+
+  .imgWrap {
+    width:48%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 20px 30px #aea9a9;
+
+    &:hover {
+
+      .overlay {
+        width: 0;
+      }
+    }
+
+    @include media('>tablet'){
+      height: 320px;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #00000070;
+      z-index: 5;
+      transition: width 1.3s ease;
+    }
+
+    .overtext {
+      position: absolute;
+      left: 15px;
+      bottom:15px;
+      color: #FFFFFF;
+      z-index: 6;
+    }
+
+    img {
+      width: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+  }
+}

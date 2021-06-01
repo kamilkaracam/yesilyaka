@@ -1,0 +1,28 @@
+@import "../../assets/styles/breakpoints";
+@import "../../assets/styles/main";
+
+.socialWrap {
+  margin: 1rem auto;
+  width: 80%;
+  @include media('>bigphone') {
+    width: 70%;
+  }
+
+  @include media('>=tablet') {
+    width: 50%;
+  }
+
+  @include media('>=desktop'){
+    width: 25%;
+  }
+
+  h6 {
+    color: $coffee;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

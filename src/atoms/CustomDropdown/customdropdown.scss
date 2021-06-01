@@ -1,0 +1,120 @@
+@import '../../assets/styles/breakpoints';
+@import "../../assets/styles/main";
+
+.infoForm {
+  margin: 0;
+  padding: 0;
+
+  @include media('<bigtablet'){
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .infoButton {
+    background-color:#000000;
+    font-size: 11px;
+    font-weight: bold;
+
+    @include media('<bigtablet') {
+      background-color: rgba(217, 213, 213, 0.33);
+      border: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $footer;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      position: sticky;
+      top: 0;
+
+      &:hover,&:active,&:focus,&:disabled {
+        background-color: $coffee !important;
+
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+    &:hover,&:active,&:focus,&:disabled {
+      background-color: #282828 ;
+
+    }
+  }
+
+  .infoMenu {
+    padding: 0;
+    top: 40px;
+    left: -180px;
+    min-width: 20rem;
+    transition: all 3s ease-in;
+
+    @include media('<bigtablet'){
+      padding: 0;
+      top: 110%;
+      left: -45%;
+      min-width: 20rem;
+    }
+
+    form {
+
+      .form-group{
+        width: 85%;
+        margin: 0 auto;
+        padding: 0 0 2rem;
+
+        .checkbox {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          font-size: 9px;
+          color: $text;
+
+          input {
+            height: 12px;
+            margin-right: 0.5rem;
+          }
+        }
+
+        label {
+          display: flex;
+          flex-direction: column;
+          font-size: 0.6rem;
+          color: $footer;
+
+          span {
+            color: crimson;
+          }
+
+          input,textarea {
+            border: 1px $text solid;
+            height: 32px;
+            margin: 0.2rem 0;
+            padding: 0.3rem 0.5rem;
+            font-size: 12px;
+          }
+          input {
+
+          }
+        }
+
+        .submitButton {
+          background-color: $buttongreen;
+          color: #FFFFFF;
+          width: 100%;
+          border-radius: 0;
+          border: none;
+          font-size: 14px;
+          font-weight: 300;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+

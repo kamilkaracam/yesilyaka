@@ -1,0 +1,49 @@
+@import './breakpoints';
+@import "./main";
+
+//change bootstrap icon in homepage hero slide
+
+.carousel-control-prev-icon {
+  background-image: url("../../assets/icons/leftarrow.svg") !important;
+  width: 64px;
+  height: 64px;
+ 
+
+  @include media('<bigtablet') {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.carousel-control-next-icon {
+  background-image: url("../../assets/icons/rightarrow.svg") !important;
+  width: 64px;
+  height: 64px;
+  
+
+  @include media('<bigtablet') {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute!important;
+}
+
+.backdropVirtual {
+  opacity: 1 !important;
+}
+
+.modal-backdrop.show {
+  opacity: 1 !important;
+}
+
+.dropdown-toggle::after {
+  display:none;
+}
+
+    .nav-link {
+      padding: 0 !important;
+    }
+

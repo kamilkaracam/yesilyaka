@@ -1,0 +1,2 @@
+(self.webpackChunkyesilyaka = self.webpackChunkyesilyaka || []).push([[883], { 9616: function (e, n, a) { "use strict"; a.r(n); var t = a(7294), l = a(5444); n.default = function () { return t.createElement("main", null, t.createElement(l.Link, { to: "/" }, "Go home"), ".") } } }]);
+//# sourceMappingURL=component---src-pages-404-js-2622561cc5634c32dc02.js.map

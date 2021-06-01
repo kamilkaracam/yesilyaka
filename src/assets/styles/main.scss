@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Friandise;
+  src: url("/fonts/woff/FriandiseNormalDemo.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montesque;
+  src: url("/fonts/woff/Montesque.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Voga;
+  src: url("/fonts/woff/Voga.woff") format("woff");
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+
+$montserrat : 'Montserrat',sans-serif;
+$primary : Friandise,sans-serif;
+$montesque: Montesque,sans-serif;
+$voga : Voga,sans-serif;
+
+
+$text : #000000;
+$footer : #4a4a4a;
+$beige : #F6DFBD;
+$dark : #282828;
+$green : #7BC5A6;
+$coffee : #897B68;
+$secondwhite : #eeeeee;
+$buttongreen: #00833E;
+
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: $text;
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+body {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: $primary;
+  font-weight: 300;
+  line-height: 1;
+}
+
+button {
+  text-decoration: none;
+}
+
+

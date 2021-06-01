@@ -1,0 +1,32 @@
+@import '../../../../assets/styles/breakpoints';
+@import '../../../../assets/styles/main';
+
+.hero {
+
+  .heroWrap {
+    position: relative;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 1rem;
+
+    @include media('>tablet') {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    @include media('>=bigtablet') {
+      margin: 3rem 0 2rem;
+    }
+  }
+}
+
+
+

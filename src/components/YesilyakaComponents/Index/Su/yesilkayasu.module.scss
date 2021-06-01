@@ -1,0 +1,62 @@
+@import "../../../../assets/styles/main";
+@import "../../../../assets/styles/breakpoints";
+
+.hero {
+
+  .heroWrap {
+    height: auto;
+
+    @include media('<=bigphone'){
+      height: auto;
+    }
+    
+    img {
+      width: 100%;
+       height: auto;
+      
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 1rem;
+
+    @include media('>tablet') {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    @include media('>=bigtablet') {
+      margin: 3rem 0 2rem;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    width: 60%;
+    text-align: center;
+    line-height: 2rem;
+
+
+    @include media('>=tablet'){
+      width: 40%;
+      line-height: 2.3rem;
+    }
+    @include media('>=bigtablet'){
+      width: 25%;
+      line-height: 3rem;
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

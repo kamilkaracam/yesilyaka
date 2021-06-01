@@ -1,0 +1,22 @@
+@import "../../../assets/styles/breakpoints";
+@import "../../../assets/styles/main";
+
+.conceptSwiper {
+
+  .swiper-wrapper {
+    padding-bottom: 2rem;
+
+    .conceptSlide {
+      width: 220px !important;
+
+      @include media('>=tablet'){
+        width: 340px !important;
+      }
+
+      @include media('>=bigtablet'){
+        width: 824px !important;
+
+      }
+    }
+  }
+}

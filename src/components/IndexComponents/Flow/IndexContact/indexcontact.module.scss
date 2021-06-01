@@ -1,0 +1,161 @@
+@import "../../../../assets/styles/breakpoints";
+@import "../../../../assets/styles/main";
+
+.contact {
+
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+
+
+  @include media('>bigtablet') {
+    padding: 2rem;
+  }
+
+  .contactImage {
+
+   height: 100%;
+    width: 95%;
+    max-height: 480px;
+    margin: 0 auto;
+    box-shadow: 0 5px 8px #707070;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    background-color: black;
+
+    @include media('>tablet') {
+      width:47% ;
+    }
+
+    &:hover img{
+      opacity: .5;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: fill;
+      opacity: 1;
+      transition: .5s ease;
+    }
+
+    .overlay {
+        opacity: 0;
+      width: 100%;
+      height: 100%;
+
+
+      .content {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        overflow: hidden;
+      }
+    }
+
+  }
+  .contactText {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+
+    @include media('>=tablet') {
+      width: 100%;
+      padding:0 4rem;
+    }
+
+    @include media('>bigtablet'){
+      justify-content: center;
+      width:48%;
+    }
+
+
+    h2 {
+      text-align: left;
+      font-family: $primary;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      padding: 0;
+
+      @include media('>=tablet'){
+
+        margin-bottom: 0.5rem;
+        width: 55%;
+        line-height: 2.6rem;
+        padding: 1rem 0;
+      }
+
+      @include media('>=bigtablet'){
+        padding: 2rem 3rem;
+        font-size: 4rem;
+        line-height: 3.7rem;
+        width: 100%;
+      }
+
+    }
+
+    .contactSpan {
+      padding: 0;
+
+      @include media('>tablet'){
+        padding: 0 2rem;
+      }
+
+      span {
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+
+        @include media('>tablet'){
+          margin-left: 1.2rem;
+          padding: 3.5px;
+        }
+
+        img {
+          width: 16px;
+          height: auto;
+          margin-right: 0.2rem;
+        }
+
+        p {
+          color: $text;
+          text-align: start;
+          font-size: 12px;
+          width: 85%;
+          margin-left: 1rem;
+        }
+
+      }
+    }
+  }
+
+  .line {
+    width: 80%;
+    height: 2px;
+    background-color: #282828;
+    margin: 2rem 0;
+
+    @include media('>bigtablet') {
+      width: 2px;
+      height: 80%;
+    }
+  }
+
+}
+
+.backDrop {
+  background-color: black;
+}

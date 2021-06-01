@@ -1,0 +1,62 @@
+@import '../../assets/styles/breakpoints';
+@import '../../assets/styles/main';
+
+.imgwrap {
+  padding: 3rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+ 
+
+  @include media ('>bigphone') {
+    width: 70%;
+  }
+
+  @include media ('>=tablet') {
+    width: 45%;
+  }
+
+  @include media ('>=bigtablet') {
+    width: 40%;
+    padding: 1rem !important;
+  }
+
+  @include media ('>=desktop') {
+    width: 35%;
+  }
+
+  span {
+    width: 2px;
+    height: 60px;
+    background-color: #282828;
+    margin: 2rem;
+  }
+
+  .imgbox {
+    padding: 0;
+  }
+}
+
+.corporateText {
+
+  padding: 1rem 2rem;
+
+  @include media('>bigtablet') {
+    padding:2rem 6rem;
+  }
+
+  p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 1rem;
+
+    @include media('>tablet') {
+      font-size: 14px;
+      line-height: 28px;
+    }
+
+
+  }
+}

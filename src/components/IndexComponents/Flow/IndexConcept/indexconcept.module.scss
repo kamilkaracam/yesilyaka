@@ -1,0 +1,42 @@
+@import "../../../../assets/styles/breakpoints";
+@import "../../../../assets/styles/main";
+
+.concept {
+  background-color: $secondwhite;
+  padding: 2rem 0;
+
+  .conceptText {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 160px;
+
+    @include media('>420') {
+      width: 60%;
+    }
+
+    h2 {
+      font-family: $primary;
+      text-align: center;
+      font-weight: 300;
+      font-size: 2.5rem;
+
+      @include media('>tablet') {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .conceptSwiper {
+
+    @include media('>bigtablet'){
+      margin: 2rem 0;
+    }
+
+   .swiper-wrapper {
+     margin: 0 !important;
+     padding-bottom: 2rem !important;
+   }
+  }
+}

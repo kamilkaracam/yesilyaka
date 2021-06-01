@@ -1,0 +1,82 @@
+@import "../../../../assets/styles/breakpoints";
+@import "../../../../assets/styles/main";
+
+.imgWrap {
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 8px #707070;
+
+  @include media ('<tablet'){
+    width: 205px !important;
+    height: 320px !important;
+  }
+
+    img {
+      width: 100%;
+
+      @include media('<tablet') {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .overlay {
+
+      width: 100% !important;
+      height: 100% !important;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+      z-index: 2;
+    }
+
+    .textWrap {
+      width: 85%;
+      position: absolute;
+      z-index: 4;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      padding-bottom: 2rem;
+
+      @include media('<tablet') {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1rem;
+        justify-content: space-around;
+      }
+
+      h4 {
+        color: white;
+
+        @include media ('<tablet'){
+          font-size: 1rem;
+        }
+      }
+
+      a{
+        button {
+          padding: 0.5rem 1.5rem;
+          border: none;
+          background-color: #FFFFFF;
+          border-radius: 12px;
+          font-size: 16px;
+
+          @include media('<tablet'){
+            font-size: 12px;
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+
+    }
+
+
+}
