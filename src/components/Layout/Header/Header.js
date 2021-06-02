@@ -99,8 +99,9 @@ const Header = (props) => {
                         >Villa Planları
                             </Link>
                         <Link activeStyle={{ color: 'black', fontWeight: '700' }} to={"/yesilyakakoru/galeri"}>Galeri</Link>
-                        <Link to={"/yesilyakakoru/vaziyet"} activeStyle={{ color: 'black', fontWeight: '700' }} >Vaziyet Planı</Link>
+
                         <Link to={"/yesilyakakoru/sosyal"} activeStyle={{ color: 'black', fontWeight: '700' }} >Sosyal Alanlar</Link>
+                        <Link to={"/yesilyakakoru/vaziyet"} activeStyle={{ color: 'black', fontWeight: '700' }} >Vaziyet Planı</Link>
                     </NavDropdown>
                     <NavDropdown
                         id="basic-nav-dropdown"
@@ -113,8 +114,9 @@ const Header = (props) => {
                         <Link to={"/yesilyakasu"} activeStyle={{ color: 'black', fontWeight: '700' }} >Konsept</Link>
                         <Link to={"/yesilyakasu/villa"} activeStyle={{ color: 'black', fontWeight: '700' }} >Villa Planları</Link>
                         <Link activeStyle={{ color: 'black', fontWeight: '700' }} to={"/yesilyakasu/galeri"}>Galeri</Link>
-                        <Link to={"/yesilyakasu/vaziyet"} activeStyle={{ color: 'black', fontWeight: '700' }} >Vaziyet Planı</Link>
+
                         <Link to={"/yesilyakasu/sosyal"} activeStyle={{ color: 'black', fontWeight: '700' }} >Sosyal Alanlar</Link>
+                        <Link to={"/yesilyakasu/vaziyet"} activeStyle={{ color: 'black', fontWeight: '700' }} >Vaziyet Planı</Link>
                     </NavDropdown>
                     <Nav.Link className={classes.borderRight}>
                         <Link

@@ -4,14 +4,33 @@
 .header {
   padding: 1rem 3rem;
   height: 150px;
-  position: relative;
+  //position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 150px;
+    z-index: 9999;
+    margin: 0;
+    background: white;
+    width: 100%;
 
   @include media('>desktop') {
     width: 100%;
     margin: 0 auto;
+  }
+
+  header{
+        position: fixed;
+    top: 0;
+    right: 0;
+    height: 150px;
+    z-index: 9999;
+    margin: 0;
+    background: white;
+    width: 100%;
   }
 
   .navbar {

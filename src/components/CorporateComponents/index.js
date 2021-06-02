@@ -9,10 +9,10 @@ import nur from "../../assets/images/nurol.svg";
 
 //import style
 import * as classes from "./corporatecomponents.module.scss";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 const CorporateComponents = () => {
-    return(
+    return (
         <>
             <div className={classes.imgwrap} data-aos={'fade-up'} data-aos-duration={'1300'}>
                 <div className={classes.imgbox}>
@@ -35,38 +35,38 @@ const CorporateComponents = () => {
             </div>
             <div className={classes.corporateText}>
                 <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
-                    Tam 50 yıldır sadece yeni yuvalar için değil, yeni hatıralar biriktirmek için de çalışıyoruz.<br/>                     Çünkü biz insanın biriktirebileceği en değerli şeyin anıları olduğuna inanıyoruz.
+                    50 yılı aşkın süredir sadece yeni yuvalar için değil, yeni hatıralar biriktirmek için de çalışıyoruz.<br />                     Çünkü biz insanın biriktirebileceği en değerli şeyin anıları olduğuna inanıyoruz.
                 </p>
 
                 <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
-                    Bugüne kadar hayata geçirdiğimiz yüzlerce projeye değer katan, <br/>
-                    bizi büyük bir aile yapan yüz binlerce dostumuzun <br/>
-                    en güzel anılarının ortak noktası olmanın mutluluğunu yaşıyoruz.<br/>
-                    Şimdi de güzel ve unutulmaz anılarınıza yenilerini ekleyeceğiniz, <br/>
+                    Bugüne kadar hayata geçirdiğimiz yüzlerce projeye değer katan, <br />
+                    bizi büyük bir aile yapan yüz binlerce dostumuzun <br />
+                    en güzel anılarının ortak noktası olmanın mutluluğunu yaşıyoruz.<br />
+                    Şimdi de güzel ve unutulmaz anılarınıza yenilerini ekleyeceğiniz, <br />
                     muhteşem doğasıyla kendinizi hep genç hissedeceğiniz Yeşilyaka’yı beğeninize sunuyoruz.
 
                 </p>
             </div>
 
-            <Title title="MESA VE NUROL GÜVENCESİYLE" subtitle="KURUMSAL"/>
+            <Title title="MESA VE NUROL GÜVENCESİYLE" subtitle="KURUMSAL" />
 
             <div className={classes.corporateText}>
                 <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
-                    Yeşiller içinde uyandığınız ve villanızdan maviye adım attığınız bir yaşam düşleyin. <br/>
+                    Yeşiller içinde uyandığınız ve villanızdan maviye adım attığınız bir yaşam düşleyin. <br />
                     Şehre yakın ancak bir o kadar da doğayla ve suyla temasta olan bir yaşam.
                 </p>
                 <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
-                    Mutlu bir yaşam için doğadan asla vazgeçmeyenler Yeşilyaka Koru’da hayatlarına başladı!<br/>
-                    İstanbul gürültüsünden uzak, orman ile çevrelenmiş villalarda her anınızı tatilde gibi yaşayabilirsiniz.<br/>
+                    Mutlu bir yaşam için doğadan asla vazgeçmeyenler Yeşilyaka Koru’da hayatlarına başladı!<br />
+                    İstanbul gürültüsünden uzak, orman ile çevrelenmiş villalarda her anınızı tatilde gibi yaşayabilirsiniz.<br />
 
-                    Aileniz için en iyi seçenekler Yeşilyaka Koru ve Yeşilyaka Su’da bir arada.<br/>
-                    Ulaşım, sosyal yaşam ve ihtiyaçlarınız için doğadan uzaklaşmaya gerek kalmadan evinizde huzuru <br/>
-                   bulabilirsiniz.<br/>
-                    İstanbul’da iyi bir hayat standardına ulaşmak, kaliteli yaşamak için doğa ve şehir<br/> Yeşilyaka’da.
+                    Aileniz için en iyi seçenekler Yeşilyaka Koru ve Yeşilyaka Su’da bir arada.<br />
+                    Ulaşım, sosyal yaşam ve ihtiyaçlarınız için doğadan uzaklaşmaya gerek kalmadan evinizde huzuru <br />
+                   bulabilirsiniz.<br />
+                    İstanbul’da iyi bir hayat standardına ulaşmak, kaliteli yaşamak için doğa ve şehir<br /> Yeşilyaka’da.
                 </p>
             </div>
 
-            <Title title="MESA MESKEN"/>
+            <Title title="MESA MESKEN" />
 
             <div className={classes.corporateText}>
                 <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
@@ -99,7 +99,7 @@ const CorporateComponents = () => {
                 </p>
             </div>
 
-            <Title title="NUROL"/>
+            <Title title="NUROL" />
 
             <div className={classes.corporateText}>
                 <p data-aos={'zoom-in'} data-aos-duration={'1300'}>

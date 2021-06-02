@@ -42,7 +42,7 @@ const ConceptSwiper = () => {
                         img={conceptSwiper[0].img}
                         alt={conceptSwiper[0].alt}
                         title={conceptSwiper[0].title}
-                        link={'/yesilyakasu'}
+                        link={'/yesilyakakoru'}
                     />
                 </SwiperSlide>
                 <SwiperSlide
@@ -52,7 +52,7 @@ const ConceptSwiper = () => {
                         img={conceptSwiper[1].img}
                         alt={conceptSwiper[1].alt}
                         title={conceptSwiper[1].title}
-                        link={'/yesilyakakoru'}
+                        link={'/yesilyakasu'}
                     />
                 </SwiperSlide>
             </Swiper>

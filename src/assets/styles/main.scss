@@ -35,6 +35,12 @@ $secondwhite : #eeeeee;
 $buttongreen: #00833E;
 
 
+.infoForm{
+      position: fixed;
+    right: 30px;
+    z-index: 9999;
+}
+
 *,
 *::before,
 *::after {

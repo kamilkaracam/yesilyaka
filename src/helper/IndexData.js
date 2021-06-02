@@ -4,7 +4,7 @@ import carouselOne from '../assets/images/index/indexhero.png';
 //index content swiper
 import contentOne from '../assets/images/index/contentswiper1.png';
 import contentTwo from '../assets/images/index/contentswiper2.png';
-import contentThree from '../assets/images/index/contentswiper3.png';
+import contentThree from '../assets/images/index/content-swiper-3.jpg';
 import contentFour from '../assets/images/index/contentswiper4.png';
 
 //concept swiper
