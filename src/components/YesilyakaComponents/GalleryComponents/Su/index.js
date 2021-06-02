@@ -22,6 +22,18 @@ SwiperCore.use([Navigation, Thumbs]);
 
 const SuGalleryComponent = () => {
 
+    function stopVideo(element) {
+        let iframe = document.querySelector('#iframe2')
+        let video = document.querySelector('video');
+        if (iframe) {
+            var iframeSrc = iframe.src;
+            iframe.src = iframeSrc;
+        }
+        if (video) {
+            video.pause();
+        }
+    }
+
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const [activeOne, setActiveOne] = useState('');
     const [activeTwo, setActiveTwo] = useState('');
@@ -181,11 +193,12 @@ const SuGalleryComponent = () => {
                     <Swiper
                         navigation={true}
                         className="villaInside"
+                        onMouseOver={stopVideo} onMouseLeave={stopVideo}
                     >
                         <SwiperSlide>
-                            <iframe width="100%" height="520px" src="https://www.youtube.com/embed/GAyh_5xt4ds"
+                            <iframe id="iframe2" onMouseLeave={stopVideo} width="100%" height="520px" src="https://www.youtube.com/embed/GAyh_5xt4ds"
                                 title="YouTube video player" frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
                                 allowFullScreen></iframe>
                         </SwiperSlide>
                     </Swiper>
@@ -212,6 +225,7 @@ const SuGalleryComponent = () => {
                             setActiveTwo('')
                             setActiveThree('')
                             setActiveFour('')
+
                         }}
                     >Villa İç Mekan</Button>
                 </SwiperSlide>
@@ -225,6 +239,7 @@ const SuGalleryComponent = () => {
                             setActiveTwo('black')
                             setActiveThree('')
                             setActiveFour('')
+
                         }}
                     >Villa Dış Mekan</Button>
                 </SwiperSlide>
@@ -240,6 +255,7 @@ const SuGalleryComponent = () => {
                             setActiveTwo('')
                             setActiveThree('black')
                             setActiveFour('')
+
                         }}
                     >Sosyal Alanlar</Button>
                 </SwiperSlide>

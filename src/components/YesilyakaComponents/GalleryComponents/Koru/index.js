@@ -29,6 +29,18 @@ SwiperCore.use([Navigation, Thumbs]);
 
 const KoruGalleryComponent = () => {
 
+    function stopVideo(element) {
+        let iframe = document.querySelector('#iframe1')
+        let video = document.querySelector('video');
+        if (iframe) {
+            var iframeSrc = iframe.src;
+            iframe.src = iframeSrc;
+        }
+        if (video) {
+            video.pause();
+        }
+    }
+
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const [activeOne, setActiveOne] = useState('');
     const [activeTwo, setActiveTwo] = useState('');
@@ -261,8 +273,8 @@ const KoruGalleryComponent = () => {
                     </Swiper>
                 </SwiperSlide>
                 {/* Video Button Swiper */}
-                <SwiperSlide>
-                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/GAyh_5xt4ds"
+                <SwiperSlide onMouseLeave={stopVideo}>
+                    <iframe id="iframe1" width="100%" height="500px" src="https://www.youtube.com/embed/GAyh_5xt4ds"
                         title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen></iframe>

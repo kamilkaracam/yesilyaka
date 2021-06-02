@@ -5,7 +5,7 @@ import SocialBoxKoru from "../../../../atoms/YesilyakaAtoms/SocialBoxKoru";
 
 //import images
 import socialhero from '../../../../assets/images/Koru/sosyal/sos-min.jpg';
-import {SocialIconSets} from "../../../../helper/Sets/IconSets";
+import { SocialIconSets } from "../../../../helper/Sets/IconSets";
 
 
 // import style
@@ -14,15 +14,15 @@ import Title from "../../../../atoms/Title";
 import SmallTitle from "../../../../atoms/SmallTitle";
 
 const SocialKoruFlow = () => {
-    return(
+    return (
         <>
             <div className={classes.hero}>
                 <div className={classes.socialHero}>
-                    <img src={socialhero} alt="sos"/>
+                    <img src={socialhero} alt="sos" />
                 </div>
                 <div className={classes.socialFlow}>
                     <SmallTitle title="SOSYAL ALANLAR"></SmallTitle>
-                    <Title title="YEŞİLKAYA KORU"/>
+                    <Title title="YEŞİLYAKA KORU" />
                     <div className={classes.boxWrapper}>
                         <SocialBoxKoru
                             image={SocialIconSets.movie}
@@ -51,8 +51,8 @@ const SocialKoruFlow = () => {
                         />
                         <SocialBoxKoru
                             image={SocialIconSets.party}
-                            text ="PARTİ ALANLARI"
-                            alt ="PARTİ ALANLARI"
+                            text="PARTİ ALANLARI"
+                            alt="PARTİ ALANLARI"
                         />
                         <SocialBoxKoru
                             image={SocialIconSets.bank}
@@ -67,7 +67,7 @@ const SocialKoruFlow = () => {
                         <SocialBoxKoru
                             image={SocialIconSets.swim}
                             text="AÇIK-KAPALI YÜZME HAVUZU"
-                            alt="AÇIK-KAPALI YÜZME HAVUZU"/>
+                            alt="AÇIK-KAPALI YÜZME HAVUZU" />
                         <SocialBoxKoru
                             image={SocialIconSets.lake}
                             text="YANSITMA GÖLETLER"

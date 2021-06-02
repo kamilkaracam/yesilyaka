@@ -27,11 +27,14 @@ const SocialSuFlow = () => {
                             text="AÇIK HAVA SİNEMALARI"
                             alt={'Açık Hava Sinemaları'}
                         />
+
                         <SocialBoxSu
+
                             image={SocialIconSets.park}
                             text="ÇOCUK OYUN ALANLARI"
                             alt={"ÇOCUK OYUN ALANLARI"}
                         />
+
                         <SocialBoxSu
                             image={SocialIconSets.swim}
                             text="AÇIK-KAPALI YÜZME HAVUZU"

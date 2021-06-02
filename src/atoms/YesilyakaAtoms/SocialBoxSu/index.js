@@ -4,11 +4,11 @@ import React from 'react';
 import * as classes from './socialbox.module.scss';
 
 const SocialBoxSu = (props) => {
-    return(
+    return (
         <>
             <div className={classes.socialbox}>
                 <div className={classes.imageWrap}>
-                    <img src={props.image} alt={props.alt}/>
+                    <img src={props.image} alt={props.alt} />
                 </div>
                 <div className={classes.textWrap}>
                     <p>{props.text}</p>

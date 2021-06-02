@@ -4,15 +4,15 @@ import React from 'react';
 import VillaPlan from "../../../../../atoms/YesilyakaAtoms/VillaPlan";
 
 //import images
-import {SuVilla} from "../../../../../helper/Su/SuData";
-import {PlanSets} from "../../../../../helper/Sets/IconSets";
+import { SuVilla } from "../../../../../helper/Su/SuData";
+import { PlanSets } from "../../../../../helper/Sets/IconSets";
 
 //import styles
 import * as classes from "./suflow.module.scss";
 
 const SuFlow = () => {
 
-    return(
+    return (
         <>
             <VillaPlan
                 title="DENİZ VİLLALARI"
@@ -51,24 +51,24 @@ const SuFlow = () => {
             />
             <VillaPlan
                 title="ÇAĞLAYAN VİLLALARI"
-                text="Yaşam konforunuzu yükseltecek yüksek tavanlı "
+                text="Tek kata mutluluk ve doğayı sığdıran "
                 hero={SuVilla[5].img}
                 planUp={PlanSets.caglayan}
                 planYard={PlanSets.caglayan}
             />
             <VillaPlan
                 title="ŞELALE VİLLALARI"
-                text="Yeşilyaka Su’nun en ferah yaşam alanı "
+                text="Yaşam konforunuzu yükseltecek yüksek tavanlı "
                 hero={SuVilla[6].img}
                 planUp={PlanSets.selale}
                 planYard={PlanSets.selale}
             />
             <VillaPlan
-                    title="DERYA VİLLALARI"
-                    text="Yeşilyaka Su’nun en ferah yaşam alanı "
-                    hero={SuVilla[7].img}
-                    planUp={PlanSets.deryaup}
-                    planYard={PlanSets.deryayard}
+                title="DERYA VİLLALARI"
+                text="Yeşilyaka Su’nun en ferah yaşam alanı "
+                hero={SuVilla[7].img}
+                planUp={PlanSets.deryaup}
+                planYard={PlanSets.deryayard}
             />
         </>
     )

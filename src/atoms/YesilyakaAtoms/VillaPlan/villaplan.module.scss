@@ -18,13 +18,17 @@
     width: 100%;
 
     @include media('>tablet'){
-      object-fit: none;
-      object-position: 0px -235px;
-      zoom: 60%;
+      //object-fit: none;
+     // object-position: 0px -235px;
+         object-position: top;
+            object-fit: scale-down;
+      zoom: 47%;
 
       @include media ('>=minidesktop') {
-        object-position: 0px -260px;
-        zoom: 75%;
+        //object-position: 0px -260px;
+        object-position: top;
+            object-fit: scale-down;
+        zoom: 47%;
       }
 
     }
