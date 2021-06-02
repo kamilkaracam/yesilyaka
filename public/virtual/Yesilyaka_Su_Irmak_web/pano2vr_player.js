@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 // Pano2VR 6.0 beta3/16902 HTML5/CSS3 & WebGL Panorama Player       //
-// License: Gökhan Ayd?n                                            //
+// License: Gï¿½khan Ayd?n                                            //
 // (c) 2018, Garden Gnome Software, http://ggnome.com               //
 //////////////////////////////////////////////////////////////////////
 
