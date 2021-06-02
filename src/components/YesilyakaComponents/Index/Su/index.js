@@ -2,9 +2,11 @@ import React from 'react';
 
 //import components in project
 import YesilKayaIndexFlow from "../../../../atoms/YesilyakaAtoms/IndexFlow";
+import ContactSocials from "../../../../atoms/ContactSocials";
 
 //import images
 import { suIndex } from "../../../../helper/Su/SuData";
+import mapyesilkaya from '../../../../assets/images/mapmesa.jpg';
 
 //import styles
 import * as classes from "./yesilkayasu.module.scss";
@@ -72,6 +74,51 @@ const YesilkayaSuHero = () => {
                 first={suIndex[9].img}
                 second={suIndex[10].img}
             />
+
+            <div className={classes.socials}>
+                <ContactSocials title="HASTANELER">
+                    <p><strong>Bahçeşehir Acıbadem</strong></p>
+                    <p><strong>Tıp Merkezi : </strong>10 dakika</p>
+                    <p><strong>Bahçeşehir Medikal Park : </strong>10 dakika</p>
+                    <p><strong>Medicana International</strong></p>
+                    <p><strong>Hospital : </strong>15 dakika</p>
+                </ContactSocials>
+                <ContactSocials title="ALIŞVERİŞ MERKEZLERİ">
+                    <p><strong>Metro Grossmarket : </strong>5 Dakika</p>
+                    <p><strong>Akbatı AVM : </strong>10 Dakika</p>
+                    <p><strong>Mall of İstanbul : </strong>15 dakika</p>
+                </ContactSocials>
+                <ContactSocials title="ULAŞIM">
+                    <p><strong>Bahçeşehir : </strong>10 Dakika</p>
+                    <p><strong>Büyükçekmece Marina : </strong>15 Dakika</p>
+                    <p><strong>İstanbul Havalimanı : </strong>30 Dakika</p>
+                    <p><strong>West İstanbul Marina : </strong>20 Dakika</p>
+                    <p><strong>Güzelce Marina : </strong>20 Dakika</p>
+                    <p><strong>Maslak, Levent : </strong>45 Dakika</p>
+                </ContactSocials>
+                <ContactSocials title="EĞİTİM KURUMLARI">
+                    <p><strong>Kültür Koleji : </strong>2 Dakika</p>
+                    <p><strong>İstanbul Üniversitesi</strong></p>
+                    <p><strong>Büyükçekmece Yerleşkesi : </strong>2 Dakika</p>
+                    <p><strong>Community School : </strong>5 Dakika</p>
+                    <p><strong>Alkev : </strong>6 Dakika</p>
+                    <p><strong>Özel Mev Koleji : </strong>6 Dakika</p>
+                    <p><strong>Doğa Koleji Bahçeşehir : </strong>8 Dakika</p>
+                </ContactSocials>
+            </div>
+
+            <div className={classes.mapYesilKaya}>
+                <a href="https://goo.gl/maps/dBWh8jmadzWN9Bec8" target="_blank">
+                    <img src={mapyesilkaya} alt="map" />
+                </a>
+            </div>
+
+            <div className={classes.video}>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CyL9KR6dC60"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen></iframe>
+            </div>
         </>
     )
 }
