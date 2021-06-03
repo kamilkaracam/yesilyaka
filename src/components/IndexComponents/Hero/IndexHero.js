@@ -34,8 +34,17 @@ const IndexHero = () => {
             <div className={classes.promo}>
                 <h1 data-aos={'zoom-in'} data-aos-duration={'1300'}>
 
-                    YEŞİLYAKA'DA YAŞAM BAŞLADI
+                    YEŞİLYAKA'DA YAŞAM BAŞLADI! 
+                  
+
                 </h1>
+                  <h1 data-aos={'zoom-in'} data-aos-duration={'1300'}>
+
+                    VİLLANIZ HEMEN TESLİM.
+                     
+
+                </h1>
+                 
                 <div className={classes.imgwrap} data-aos={'zoom-in'} data-aos-duration={'1300'}>
                     <div className={classes.imgbox}>
                         <img

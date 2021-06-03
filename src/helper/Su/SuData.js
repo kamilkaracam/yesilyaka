@@ -1,5 +1,5 @@
 //Su index images
-import indexHero from '../../assets/images/Su/index/indexsuhero.png';
+import indexHero from '../../assets/images/Su/sosyal/su-slider.jpg';
 import indexOne from '../../assets/images/Su/index/indexone.png';
 import indexTwo from '../../assets/images/Su/index/indextwo.png';
 import indexThree from '../../assets/images/Su/index/indexthree.png';

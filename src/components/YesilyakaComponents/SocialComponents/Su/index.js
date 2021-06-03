@@ -4,7 +4,7 @@ import React from 'react';
 import SocialBoxSu from "../../../../atoms/YesilyakaAtoms/SocialBoxSu";
 
 //import images
-import socialhero from '../../../../assets/images/Su/sosyal/su-social.jpg';
+import socialhero from '../../../../assets/images/Su/sosyal/su-slider.jpg';
 import { SocialIconSets } from "../../../../helper/Sets/IconSets";
 
 // import style
