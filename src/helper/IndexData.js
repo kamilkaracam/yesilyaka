@@ -34,7 +34,7 @@ export const contentSwiper = [
         img: contentOne,
         alt: 'content yesilyaka',
         title: 'Bir Mutluluk Vadisi',
-        subtitle: 'KONSEPT'
+        subtitle: 'KONSEPT',
 
     },
     {
