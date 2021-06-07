@@ -78,23 +78,13 @@ export const newsSwiper = [
         img: newsOne,
         alt: 'yesilyaka huzur adresi',
         title: 'Yeşilyaka’da Yaşam Başladı',
-        text: 'Türkiye’de inşaat sektöründe\n' +
-            'güven sembolü olan iki güçlü marka\n' +
-            'Mesa Mesken ve Nurol İnşaat,\n' +
-            'Yeşilyaka projesinin\n' +
-            'yoğun talep görmesi üzerine\n' +
-            'yeni etabı satışa açtı.',
+        text: 'Mesa Mesken ve Nurol İnşaat güvencesiyle Büyükçekmece’de yer alan Yeşilyaka projesinde, doğa ve suyla temasta bir yaşam başladı.',
     },
     {
         img: newsTwo,
-        alt: 'yesilyaka huzur adresi',
-        title: 'Yeşilyaka Hem Akıllı Hem Sağlıklı',
-        text: 'Yeşilyaka projesinde\n' +
-            'akıllı bina sistemleri üreten\n' +
-            'Hager Berker  KNX\n' +
-            'sistemleri yer alıyor.\n' +
-            '\n' +
-            '',
+        alt: '2.000 m²’ye Kadar Geniş Bahçeli Villa Seçenekleri',
+        title: '2.000 m²’ye Kadar Geniş Bahçeli Villa Seçenekleri',
+        text: 'Yeşiller içinde uyandığınız ve villanızdan doğaya adım attığınız bir yaşam, Yeşilyaka’da.',
     },
     {
         img: newsThree,

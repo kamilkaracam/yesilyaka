@@ -4,8 +4,8 @@ import React from 'react';
 import Title from "../../atoms/Title";
 
 //import images
-import mesa from "../../assets/images/mesa.svg";
-import nur from "../../assets/images/nurol.svg";
+
+import mesawithnurol from "../../assets/images/mesawithnurol.png";
 
 //import style
 import * as classes from "./corporatecomponents.module.scss";
@@ -18,20 +18,12 @@ const CorporateComponents = () => {
                 <div className={classes.imgbox}>
                     <img
                         className="d-block"
-                        src={mesa}
-                        alt="mesa"
+                        src={mesawithnurol}
+                        alt="mesawithnurol"
                         width={'100%'}
                     />
                 </div>
-                <span></span>
-                <div className={classes.imgbox}>
-                    <img
-                        className="d-block"
-                        src={nur}
-                        alt="nurol"
-                        width={'100%'}
-                    />
-                </div>
+
             </div>
             <div className={classes.corporateText}>
                 <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
