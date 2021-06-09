@@ -1,14 +1,14 @@
 import React from 'react';
 //import gatsby
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 
 //import styles
 import * as classes from "./conceptswiper.module.scss";
 
 const SwiperCard = (props) => {
-    return(
+    return (
         <div className={`${classes.imgWrap}`}>
-            <img src={props.img} alt={props.alt}/>
+            <img src={props.img} alt={props.alt} />
             <div className={classes.overlay}></div>
             <div className={classes.textWrap}>
                 <h4>{props.title}</h4>
