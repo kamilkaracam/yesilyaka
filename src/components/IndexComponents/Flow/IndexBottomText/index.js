@@ -38,7 +38,6 @@ const BottomText = () => {
                 slidesPerView={'auto'}
                 autoplay={{
                     "delay": 6000,
-                    "autoplay": 6000,
                     "disableOnInteraction": true
                 }}
                 className="bottomSwiper"
