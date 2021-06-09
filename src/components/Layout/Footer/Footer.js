@@ -41,14 +41,9 @@ const Footer = () => {
                             <img src={facebook} alt="facebook" />
                         </a>
                     </li>
-
-
-
-
                 </ul>
-
-
             </div>
+
         </>
     )
 }
