@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //import components in project
 import VillaPlan from "../../../../../atoms/YesilyakaAtoms/VillaPlan";
 
+
+import map from '../../../../../assets/images/map@2x.png';
 //import images
-import {koruVilla} from '../../../../../helper/Koru/KoruData';
-import {PlanSets} from "../../../../../helper/Sets/IconSets";
+import { koruVilla } from '../../../../../helper/Koru/KoruData';
+import { PlanSets } from "../../../../../helper/Sets/IconSets";
+import { Modal } from "react-bootstrap";
 
 //import styles
 import * as classes from "./koruflow.module.scss";
 
 
 const KoruFlow = () => {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = (e) => {
+        setShow(false)
+    }
+
+    const handleShow = () => setShow(true);
 
     return (
         <>
@@ -22,7 +33,19 @@ const KoruFlow = () => {
                 alt={koruVilla[0].alt}
                 planUp={PlanSets.sedirup}
                 planYard={PlanSets.sediryard}
+                onClick={handleShow}
             />
+            <Modal
+                show={show}
+                onHide={handleClose}
+                close
+                size={'x1'}
+                backdrop={true}
+                backdropClassName={classes.backDrop}
+            >
+                <Modal.Header closeButton></Modal.Header>
+                <img src={map} alt="map" />
+            </Modal>
             <VillaPlan
                 title="SÖĞÜT VİLLALARI"
                 text="Huzurlu doğanın bir parçası dubleks "
