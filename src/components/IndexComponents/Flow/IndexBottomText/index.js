@@ -5,7 +5,7 @@ import AOS from 'aos';
 
 //import styles
 import * as classes from "./bottomtext.scss";
-import mesawithnurol from "../../../../assets/images/mesawithnurol.png";
+import mesawithnurol from "../../../../assets/images/mesawithnurol-1.png";
 import nur from "../../../../assets/images/nurol.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -38,7 +38,8 @@ const BottomText = () => {
                 slidesPerView={'auto'}
                 autoplay={{
                     "delay": 6000,
-                    "disableOnInteraction": false
+                    "autoplay": 6000,
+                    "disableOnInteraction": true
                 }}
                 className="bottomSwiper"
             >

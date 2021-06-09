@@ -17,7 +17,7 @@ import news from '../assets/images/index/news.png';
 
 //news swiper
 import newsOne from '../assets/images/index/conceptswiper2.png';
-import newsTwo from '../assets/images/index/sw2.jpg';
+import newsTwo from '../assets/images/index/news3.jpg';
 import newsThree from '../assets/images/index/conceptswiper2.png';
 
 
