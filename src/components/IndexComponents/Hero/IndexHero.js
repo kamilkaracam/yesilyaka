@@ -8,6 +8,7 @@ import AOS from 'aos';
 import { indexCarousel } from '../../../helper/IndexData';
 import mesa from '../../../assets/images/mesa.svg';
 import nur from '../../../assets/images/nurol.svg';
+import mesamurol from '../../../assets/images/mesa-nurol.png';
 import arrowDown from '../../../assets/icons/arrowDown.png';
 
 //import styles
@@ -49,16 +50,7 @@ const IndexHero = () => {
                     <div className={classes.imgbox}>
                         <img
                             className="d-block"
-                            src={mesa}
-                            alt="mesa"
-                            width={'100%'}
-                        />
-                    </div>
-                    <span></span>
-                    <div className={classes.imgbox}>
-                        <img
-                            className="d-block"
-                            src={nur}
+                            src={mesamurol}
                             alt="nurol"
                             width={'100%'}
                         />
