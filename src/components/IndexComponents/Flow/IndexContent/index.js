@@ -8,10 +8,10 @@ import ContentSwiper from "../../../../atoms/IndexAtoms/ContentSwiper";
 import SmallTitle from "../../../../atoms/SmallTitle";
 
 // import icons
-import villa from '../../../../assets/icons/villa11.png';
-import friendnature from '../../../../assets/icons/friendnature11.png';
-import field from '../../../../assets/icons/field11.png';
-import field2 from '../../../../assets/icons/field22.png';
+import villa from '../../../../assets/images/villa.svg';
+import friendnature from '../../../../assets/images/ortak-yesil-alan.svg';
+import field from '../../../../assets/images/sosyal-tesis.svg';
+import field2 from '../../../../assets/images/yesil-alan.svg';
 
 //import styles
 import * as classes from "./indexcontent.module.scss";
