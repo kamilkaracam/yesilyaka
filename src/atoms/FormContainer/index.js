@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, {useState} from "react";
+import axios from "axios";
 //import npm packages
 import {Formik,Form , Field, ErrorMessage} from "formik";
 import * as Yup from 'yup';
@@ -13,8 +13,39 @@ const defaultValues = {
     reactMaskInput: ""
 }
 
+
+
 const FormContainer = () => {
     const { control } = useForm({ defaultValues });
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const onSubmit = async (values, { setSubmitting, resetForm  }) => {
+        const url = 'https://webservice.mesaholding.com.tr/campaign.php?token=4dabd1b453f81549e8ac5903ec2fb467'
+        values.phone = phoneNumber
+        const {name, surname, email, message, phone, checked } = values;
+        var data = {
+            smkampanya: '',
+            name,
+            surname,
+            email,
+            subject: 'Yeşilyaka Bilgi Al Formu',
+            message,
+            phone,
+            product : 196,
+            // utm_source: getParameterByName('utm_source'),
+            // utm_campaign: getParameterByName('utm_campaign'),
+            // utm_content: getParameterByName('utm_content'),
+            // utm_term: getParameterByName('utm_term'),
+            // utm_medium: getParameterByName('utm_medium'),
+            mailing: checked ? 1 : 0,
+            site : 'http://www.yesilyaka.com.tr',
+            page: '/kampanya/'
+        };
+        await axios.post(url, data)
+
+        setSubmitting(false)
+        setPhoneNumber('')
+        resetForm()
+    }
     return(
         <Formik
             //all forms initial states
@@ -23,6 +54,7 @@ const FormContainer = () => {
                 lastName: '',
                 phone:'',
                 email: '',
+                message: '',
                 termOfService: false,
             }}
 
@@ -36,8 +68,10 @@ const FormContainer = () => {
                     lastName:
                         Yup.string()
                         .required('lütfen soyisim giriniz'),
-                    phone:
-                        Yup.string().matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/, 'Geçersiz telefon numarası').required('lütfen telefon giriniz'),
+                    phone: Yup.string(),
+                    message: Yup.string()
+                            .min(15, 'Must be 15 characters or more')
+                            .required('lütfen mesajınızı giriniz'),
                     email:
                         Yup.string().email('Invalid email address').required('lütfen mailinizi giriniz'),
                     termOfService:
@@ -45,13 +79,7 @@ const FormContainer = () => {
                 })}
 
             //onsubmit function with Formik
-            onSubmit={(
-                values, { setSubmitting }) => {
-                setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
-                    setSubmitting(false);
-                }, 400);
-            }}
+            onSubmit={onSubmit}
         >
                 <Form className={classes.form}>
                     <div className={classes.formContainer}>
@@ -70,13 +98,15 @@ const FormContainer = () => {
                               name="reactMaskInput"
                               control={control}
                               render={({ field: { onChange, value } }) => (
-                                <InputMask mask="(999)9999999" value={value} onChange={onChange}>
+                                <InputMask mask="(999)9999999" id="phone" name="phone" value={phoneNumber} onChange={(e) => {
+                                    setPhoneNumber(e.target.value) 
+                                    onChange(e)
+                                }}>
                                     {(inputProps) => (
                                       <input
                                         {...inputProps}
                                         type="tel"
                                         className="input"
-                                        disableUnderline
                                       />
                                     )}
                                 </InputMask>
@@ -91,6 +121,8 @@ const FormContainer = () => {
 
                             <label htmlFor="message" className={classes.textareaLabel}>Mesajınız</label>
                             <Field  name="message" type="text" as="textarea" rows="3" placeholder="Mesajınızı Yazınız.."/>
+                            <ErrorMessage component={'span'} name="message" className={classes.error}/>
+
                         </div>
 
                         <div className={classes.checkWrapper}>
