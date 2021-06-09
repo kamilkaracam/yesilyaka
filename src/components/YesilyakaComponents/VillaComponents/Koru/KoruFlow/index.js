@@ -16,14 +16,50 @@ import * as classes from "./koruflow.module.scss";
 
 const KoruFlow = () => {
 
-    const [show, setShow] = useState(false);
+    const [showVilla, setVillaPlanShow] = useState(false);
 
     const handleClose = (e) => {
-        setShow(false)
+        setVillaPlanShow(false)
     }
 
-    const handleShow = () => setShow(true);
+    const handleShow = () => setVillaPlanShow(true);
 
+
+
+
+
+    const [showVilla2, setVillaPlanShow2] = useState(false);
+
+    const handleClose2 = (e) => {
+        setVillaPlanShow2(false)
+    }
+
+    const handleShow2 = () => setVillaPlanShow2(true);
+
+
+
+
+
+
+
+    const [showVilla3, setVillaPlanShow3] = useState(false);
+
+    const handleClose3 = (e) => {
+        setVillaPlanShow3(false)
+    }
+
+    const handleShow3 = () => setVillaPlanShow3(true);
+
+
+
+
+    const [showVilla4, setVillaPlanShow4] = useState(false);
+
+    const handleClose4 = (e) => {
+        setVillaPlanShow4(false)
+    }
+
+    const handleShow4 = () => setVillaPlanShow4(true);
     return (
         <>
             <VillaPlan
@@ -36,16 +72,18 @@ const KoruFlow = () => {
                 onClick={handleShow}
             />
             <Modal
-                show={show}
+                show={showVilla}
                 onHide={handleClose}
                 close
-                size={'x1'}
+                size={'x0'}
                 backdrop={true}
                 backdropClassName={classes.backDrop}
             >
                 <Modal.Header closeButton></Modal.Header>
                 <img src={map} alt="map" />
             </Modal>
+
+
             <VillaPlan
                 title="SÖĞÜT VİLLALARI"
                 text="Huzurlu doğanın bir parçası dubleks "
@@ -53,7 +91,22 @@ const KoruFlow = () => {
                 alt={koruVilla[1].alt}
                 planUp={PlanSets.sogutup}
                 planYard={PlanSets.sogutyard}
+                onClick={handleShow2}
             />
+            <Modal
+                show={showVilla2}
+                onHide={handleClose2}
+                close
+                size={'x0'}
+                backdrop={true}
+                backdropClassName={classes.backDrop}
+            >
+                <Modal.Header closeButton></Modal.Header>
+                <img src={map} alt="map" />
+            </Modal>
+
+
+
             <VillaPlan
                 title="ARDIÇ VİLLALARI"
                 text="Konforu doğayla bir arada yaşayacağınız dubleks "
@@ -61,7 +114,21 @@ const KoruFlow = () => {
                 alt={koruVilla[2].alt}
                 planUp={PlanSets.ardicup}
                 planYard={PlanSets.ardicyard}
+                onClick={handleShow3}
             />
+            <Modal
+                show={showVilla3}
+                onHide={handleClose3}
+                close
+                size={'x0'}
+                backdrop={true}
+                backdropClassName={classes.backDrop}
+            >
+                <Modal.Header closeButton></Modal.Header>
+                <img src={map} alt="map" />
+            </Modal>
+
+
             <VillaPlan
                 title="AKASYA VİLLALARI"
                 text="Doğayı ayaklarınızın altına seren "
@@ -69,7 +136,19 @@ const KoruFlow = () => {
                 alt={koruVilla[3].alt}
                 planUp={PlanSets.akasyaup}
                 planYard={PlanSets.akasyayard}
+                onClick={handleShow4}
             />
+            <Modal
+                show={showVilla4}
+                onHide={handleClose4}
+                close
+                size={'x0'}
+                backdrop={true}
+                backdropClassName={classes.backDrop}
+            >
+                <Modal.Header closeButton></Modal.Header>
+                <img src={map} alt="map" />
+            </Modal>
         </>
     )
 }
