@@ -10,8 +10,8 @@ import SmallTitle from "../../../../atoms/SmallTitle";
 // import icons
 import villa from '../../../../assets/images/villa.svg';
 import friendnature from '../../../../assets/images/ortak-yesil-alan.svg';
-import field from '../../../../assets/images/sosyal-tesis.svg';
-import field2 from '../../../../assets/images/yesil-alan.svg';
+import field from '../../../../assets/images/yesil-alan.svg';
+import field2 from '../../../../assets/images/sosyal-tesis.svg';
 
 //import styles
 import * as classes from "./indexcontent.module.scss";
