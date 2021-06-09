@@ -35,6 +35,12 @@ $secondwhite : #eeeeee;
 $buttongreen: #00833E;
 
 
+@media (min-width: 1200px){
+.modal-dialog {
+    max-width: 1600px;
+    margin: 1.75rem auto;
+}
+}
 .infoForm{
       position: fixed;
     right: 30px;

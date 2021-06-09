@@ -14,7 +14,7 @@ import { Button } from "react-bootstrap";
 const CorporateComponents = () => {
     return (
         <>
-            <div className={classes.imgwrap} data-aos={'fade-up'} data-aos-duration={'1300'}>
+            <div className={classes.imgwrap} data-aos={'fade-up'} data-aos-duration={'2000'}>
                 <div className={classes.imgbox}>
                     <img
                         className="d-block"
@@ -26,11 +26,11 @@ const CorporateComponents = () => {
 
             </div>
             <div className={classes.corporateText}>
-                <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
+                <p data-aos={'zoom-in'} data-aos-duration={'2000'}>
                     50 yılı aşkın süredir sadece yeni yuvalar için değil, yeni hatıralar biriktirmek için de çalışıyoruz.<br />                     Çünkü biz insanın biriktirebileceği en değerli şeyin anıları olduğuna inanıyoruz.
                 </p>
 
-                <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
+                <p data-aos={'zoom-in'} data-aos-duration={'2000'}>
                     Bugüne kadar hayata geçirdiğimiz yüzlerce projeye değer katan, <br />
                     bizi büyük bir aile yapan yüz binlerce dostumuzun <br />
                     en güzel anılarının ortak noktası olmanın mutluluğunu yaşıyoruz.<br />
@@ -43,11 +43,11 @@ const CorporateComponents = () => {
             <Title title="MESA VE NUROL GÜVENCESİYLE" subtitle="KURUMSAL" />
 
             <div className={classes.corporateText}>
-                <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
+                <p data-aos={'zoom-in'} data-aos-duration={'2000'}>
                     Yeşiller içinde uyandığınız ve villanızdan maviye adım attığınız bir yaşam düşleyin. <br />
                     Şehre yakın ancak bir o kadar da doğayla ve suyla temasta olan bir yaşam.
                 </p>
-                <p data-aos={'zoom-in'} data-aos-duration={'1300'}>
+                <p data-aos={'zoom-in'} data-aos-duration={'2000'}>
                     Mutlu bir yaşam için doğadan asla vazgeçmeyenler Yeşilyaka Koru’da hayatlarına başladı!<br />
                     İstanbul gürültüsünden uzak, orman ile çevrelenmiş villalarda her anınızı tatilde gibi yaşayabilirsiniz.<br />
 
