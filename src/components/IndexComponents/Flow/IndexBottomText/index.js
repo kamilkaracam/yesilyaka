@@ -5,7 +5,7 @@ import AOS from 'aos';
 
 //import styles
 import * as classes from "./bottomtext.scss";
-import mesa from "../../../../assets/icons/mesa-nurol.png";
+import mesawithnurol from "../../../../assets/images/mesawithnurol.png";
 import nur from "../../../../assets/images/nurol.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -24,7 +24,7 @@ const BottomText = () => {
                 <div className="classes.imgbox">
                     <img
                         className="d-block"
-                        src={mesa}
+                        src={mesawithnurol}
                         alt="mesa"
                         width={'100%'}
                     />
