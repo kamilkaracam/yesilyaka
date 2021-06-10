@@ -70,7 +70,6 @@ const FormContainer = () => {
                         .required('lütfen soyisim giriniz'),
                     phone: Yup.string(),
                     message: Yup.string()
-                            .min(15, 'Must be 15 characters or more')
                             .required('lütfen mesajınızı giriniz'),
                     email:
                         Yup.string().email('Invalid email address').required('lütfen mailinizi giriniz'),
